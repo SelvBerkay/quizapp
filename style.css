@@ -1,0 +1,110 @@
+body {
+  background: orange;
+}
+
+.skor,
+.card,
+.start-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card {
+  width: 50%;
+  transform: translate(-50%, -50%) scale(0.4);
+  transition: all 0.3s ease;
+}
+.skor {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  transform: translate(-50%, -50%) scale(0.4);
+  transition: all 0.3s ease;
+}
+
+.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cevap {
+  border: 2px solid antiquewhite;
+  border-radius: 5px;
+  padding: 18px;
+  margin-top: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cevap:hover {
+  background-color: wheat;
+}
+
+.cevap span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sorumetni {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.correct {
+  background: green;
+}
+
+.incorrect {
+  background: red;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.skor .bitisikonu {
+  font-size: 50px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #d2b24589;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.time {
+  width: 25px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 2px;
+}
+.timerline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: black;
+}
