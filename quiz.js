@@ -32,7 +32,6 @@ function dogruCevapMi(secenek) {
   clearInterval(counter)
   clearInterval(counterLine)
   let cevap = secenek.querySelector("span small").innerText
-  console.log(cevap)
   if(quiz.soruGetir().cevabiKontrolEt(cevap)) {
     secenek.classList.add("correct")
     quiz.dogrusayisi += 1;
